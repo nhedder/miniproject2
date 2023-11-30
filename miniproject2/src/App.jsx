@@ -13,7 +13,7 @@ function App() {
   return (
     <>
     <img src='https://media3.giphy.com/media/9WfkIiuzx3dWcTVfRy/giphy.gif'/>
-    <h1>HAPPY HOUR</h1>
+    <h1>HAPPY HOUR!</h1>
       <UserProvider>
         <SearchHolder>
           <NavBarMUI />
