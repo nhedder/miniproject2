@@ -9,9 +9,11 @@ import { SearchContext, SearchHolder } from "./context/SearchContext";
 
 function App() {
   const [count, setCount] = useState(0);
-
+//https://media3.giphy.com/media/9WfkIiuzx3dWcTVfRy/giphy.gif
   return (
     <>
+    <img src='https://media3.giphy.com/media/9WfkIiuzx3dWcTVfRy/giphy.gif'/>
+    <h1>HAPPY HOUR</h1>
       <UserProvider>
         <SearchHolder>
           <NavBarMUI />

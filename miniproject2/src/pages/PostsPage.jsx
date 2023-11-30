@@ -13,6 +13,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { useState, useContext } from "react";
 import { SearchContext } from "../context/SearchContext";
 // save as pages/PostsPage.jsx
+
 export default function PostsPage() {
   const [textField, setTextField] = useState("");
   const { setQuery } = useContext(SearchContext);
@@ -53,12 +54,14 @@ export function PostList(props) {
     
   ):
  useData(
-    `https://www.thecocktaildb.com/api/json/v1/1/search.php?i=${query}`,
+    `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${query}`,
     []
     
   );
-console.log(query)
+
+  console.log(query)
   // the ? means only call map if postsData is not null
+  
   const postList = postsData.drinks?.map((post, index) => (
     <Grid item key={index} xs={6} md={4} lg={3}>
       <CustomCard
@@ -79,6 +82,7 @@ console.log(query)
       </Link>
     </Grid>
   ))
+  
   return (
     <>
       <Grid container spacing={2} my={2}>
@@ -89,6 +93,7 @@ console.log(query)
   );
 }
 // add to PostsPage.jsx
+
 export function Post() {
   const navigate = useNavigate();
   const { id } = useParams(); // custom hook to access dynamic params

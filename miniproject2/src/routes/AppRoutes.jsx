@@ -7,6 +7,7 @@ import AboutPage from "../pages/AboutPage";
 import Homepage from "../pages/Homepage";
 import PageNotFound from "../pages/PageNotFound";
 import MUILoginForm from "../components/MUILogInForm";
+import NavBarMUI from "../components/NavBarMui";
 import PostsPage, { Post, PostList } from "../pages/PostsPage";
 // import { CocktailsList } from './components/CocktailsList'
 // special component containing all the possible routes for this app
@@ -20,11 +21,11 @@ function AppRoutes(props) {
       <Route index element={<Homepage {...props} />} />
       {/* nested routes, matches on /dash/tasks etc */}
 
-      {/* <Route path="dash" element={<DashboardPage {...props} />}>
+      <Route path="dash" element={<DashboardPage {...props} />}>
         <Route path="messages" element={<DashboardMessages />} />
 
-        <Route path="tasks" element={<DashboardTasks />} />
-      </Route> */}
+        {/* <Route path="tasks" element={<DashboardTasks />} /> */}
+      </Route>
 
       <Route path="/about" element={<AboutPage {...props} />} />
 

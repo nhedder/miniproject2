@@ -28,14 +28,14 @@ function NavBarMUI() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: '#e31c34'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
 
           {/* desktop menu logo and icon */}
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+         
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
             component={NavLink}
             to="/"
@@ -49,7 +49,7 @@ function NavBarMUI() {
               textDecoration: 'none',
             }}
           >
-            IOD : REACT
+            HAPPY HOUR
           </Typography>
 
           {/* mobile menu items in a flexbox */}
@@ -85,7 +85,7 @@ function NavBarMUI() {
             </Menu>
           </Box>
 
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+         
           <Typography
             variant="h5"
             noWrap
@@ -102,7 +102,7 @@ function NavBarMUI() {
               textDecoration: 'none',
             }}
           >
-            IOD : REACT
+            HAPPY HOUR
           </Typography>
 
           {/* desktop menu items are here, grouped into a flex box */}

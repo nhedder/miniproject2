@@ -8,7 +8,7 @@ export default function DashboardPage() {
 
   return (
     <div className="DashboardPage componentBox">
-      <Emoji />
+    
       <h1>Dashboard</h1>
       <Outlet /> {/* see next slide */}
       {/* Will render either <DashboardMessages> when the URL is
@@ -20,9 +20,7 @@ or null if it is "/dash" */}
       <Button variant="outlined" onClick={() => navigate("/dash/messages")}>
         Show Messages
       </Button>
-      <Button variant="outlined" onClick={() => navigate(-1)}>
-        Back
-      </Button>
+     
     
     
       <Button variant="outlined" onClick={() => navigate("/login")}>
