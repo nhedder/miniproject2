@@ -14,6 +14,7 @@ function App() {
     <>
     <img src='https://media3.giphy.com/media/9WfkIiuzx3dWcTVfRy/giphy.gif'/>
     <h1>HAPPY HOUR!</h1>
+    <h3>Slow Distilled Spirits | Made In NZ</h3>
       <UserProvider>
         <SearchHolder>
           <NavBarMUI />
